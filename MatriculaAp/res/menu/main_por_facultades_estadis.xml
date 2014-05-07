@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:title="@string/menu1"
+        android:id="@+id/inicio" 
+        android:numericShortcut="8"            
+        />
+    <item 
+        android:title="@string/menu2"
+        android:id="@+id/por_facultades"             
+        />
+    <item 
+        android:title="@string/menu3"
+        android:id="@+id/por_escuelas"             
+        />
+    <item 
+        android:title="@string/menu4"
+        android:id="@+id/por_tipo_de_residencia"             
+        />
+    <item 
+        android:title="@string/menu5"
+        android:id="@+id/por_periodo"             
+        />
+	<item 
+        android:title="@string/menu6"
+        android:id="@+id/salir"             
+        />
+
+</menu>

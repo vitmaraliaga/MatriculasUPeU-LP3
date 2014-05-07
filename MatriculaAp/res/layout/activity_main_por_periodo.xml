@@ -1,0 +1,365 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainPorPeriodo" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/cuadroDeTexto"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/seekBar1"
+            android:text="@string/comentario"
+            android:textSize="5pt" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/btnEstadisticas"
+            android:layout_above="@+id/textView1"
+            android:text="@string/btnEstadisticas" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="@string/menu5"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow android:id="@+id/tableRow2" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/escuela"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/periodo1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/periodo2"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/periodo3"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/lblIng_sistemas"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad11"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad12"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad13"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/lblIng_ambiental"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad21"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad22"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad23"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView15"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/lblIng_alimentos"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad31"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad32"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad33"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView19"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/lblIng_civil"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad41"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad42"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad43"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView23"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/lblEd_inicial"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad51"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad52"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad53"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView27"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/lblContabilidiad"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad61"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad62"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad63"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView31"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/lblAdministracion"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad71"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad72"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad73"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView35"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/lblAg"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad81"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad82"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad83"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView39"
+                    style="@style/cuadroDeTexto.fondoAzul"
+                    android:text="@string/lblEnfermeria"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad91"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad92"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    style="@style/cuadroDeTexto.fondoCeleste"
+                    android:text="@string/cantidad93"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>

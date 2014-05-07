@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MatriculaAp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_por_residencia">MainPorResidencia</string>
+    <string name="title_activity_main_por_periodo">MainPorPeriodo</string>
+    <string name="title_activity_main_por_periodo_estadis">MainPorPeriodoEstadis</string>
+    <string name="title_activity_main_por_residencia_estadis">MainPorResidenciaEstadis</string>
+    <string name="hello_world">las estadisticas muestran la diferencia de alumnos entre internos y externos !</string>
+    <string name="title_activity_main_por_facultades">MainPorFacultades</string>
+    <string name="title_activity_main_por_facultades_estadis">MainPorFacultadesEstadis</string>
+    <string name="title_activity_main_por_escuelas">MainPorEscuelas</string>
+    <string name="title_activity_main_por_escuelas_estadis">MainPorEscuelasEstadis</string>
+    <string name="menu1">Inicio</string>
+    <string name="menu2">Por Facultades</string>
+    <string name="menu3">Por Escuelas</string>
+    <string name="menu5">Po Periodo</string>
+    <string name="menu4">Por Tipo de Residencia</string>
+    <string name="comentario">El ingeso de alumnos a variado segun las escuelas y segun el tiempo que va trancurriendo</string>
+    <string name="lblEnfermeria">Enfermeria</string>
+   
+   
+    <string name="btnEstadisticas">Estaditicas</string>
+   
+    <string name="lblResidencia">Residencia</string>
+    <string name="lblMatriculados">Matriculados</string>
+    <string name="lblEn_proceso">En Proceso</string>
+    <string name="lblexterno">Externo</string>
+    <string name="lblinterno">Interno</string>
+    <string name="cantidad11">100</string>
+    <string name="cantidad12">41</string>
+    <string name="cantidad13">123</string>
+    <string name="cantidad21">356</string>
+    <string name="cantidad22">25</string>
+    <string name="cantidad23">200</string>
+    <string name="cantidad31">100</string>
+    <string name="cantidad32">41</string>
+    <string name="cantidad33">233</string>
+    <string name="cantidad41">222</string>
+    
+    <string name="escuela">ESCUELA</string>
+    <string name="periodo1">2013-I</string>
+    <string name="periodo2">2013-II</string>
+    <string name="periodo3">2014-I</string>
+    <string name="lblIng_sistemas">Ing. Sistemas</string>
+    
+    <string name="lblIng_ambiental">Ing. Ambiental</string>
+    
+    <string name="lblIng_alimentos">Ing. Alimentos</string>
+    
+    <string name="lblIng_civil">Ing. Civil</string>
+    
+    <string name="cantidad42">11</string>
+    
+    <string name="cantidad43">55</string>
+    
+    <string name="lblEd_inicial">Ed. Inicial</string>
+    
+    <string name="cantidad51">111</string>
+    
+    <string name="cantidad52">220</string>
+    
+    <string name="cantidad53">207</string>
+    
+    <string name="lblContabilidiad">contabilidiad</string>
+    
+    <string name="cantidad61">896</string>
+    
+    <string name="cantidad62">756</string>
+    
+    <string name="cantidad63">569</string>
+    
+    <string name="lblAdministracion">Administracion</string>
+    
+    <string name="cantidad71">563</string>
+    
+    <string name="cantidad72">456</string>
+    
+    <string name="cantidad73">554</string>
+    
+    <string name="lblAg">AG</string>
+    
+    <string name="cantidad81">256</string>
+    
+    <string name="cantidad82">978</string>
+    
+    <string name="cantidad83">659</string>
+    
+    <string name="cantidad91">569</string>
+    
+    <string name="cantidad92">1001</string>
+    
+    <string name="cantidad93">2002</string>
+    
+    <string name="menu6">Salir</string>
+    
+
+</resources>

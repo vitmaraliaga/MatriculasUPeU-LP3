@@ -9,6 +9,7 @@ public class MainPorPeriodoEstadis extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		//Prueba
 		setContentView(R.layout.activity_main_por_periodo_estadis);
 	}
 

@@ -28,6 +28,7 @@ public class MainActivity extends Activity {
 public boolean onOptionsItemSelected(MenuItem item) {
 	  Intent action;
 	   switch (item.getItemId()) {
+	   //estooooooo no puedo profeeee
 	
 	case R.id.inicio:
 		action = new Intent(getApplicationContext(),

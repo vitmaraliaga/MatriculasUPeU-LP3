@@ -1,10 +1,16 @@
 package com.example.matriculaap;
 
+
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+
+// Jhon Ccaypani Vasquez !!
+
+
 
 public class MainActivity extends Activity {
 
@@ -24,7 +30,6 @@ public class MainActivity extends Activity {
 public boolean onOptionsItemSelected(MenuItem item) {
 	  Intent action;
 	   switch (item.getItemId()) {
-	   //estooooooo no puedo profeeee
 	
 	case R.id.inicio:
 		action = new Intent(getApplicationContext(),
@@ -71,6 +76,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
 	
 	default:   
 	   // TODO Auto-generated method stub
+		// Ronald zela comentario
 	return super.onOptionsItemSelected(item);
 }
 }

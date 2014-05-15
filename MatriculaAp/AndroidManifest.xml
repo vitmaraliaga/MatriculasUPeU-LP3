@@ -54,6 +54,10 @@
             android:name="com.example.matriculaap.MainPorEscuelasEstadis"
             android:label="@string/title_activity_main_por_escuelas_estadis" >
         </activity>
+        <activity
+            android:name="com.example.matriculaap.MainBaseMenu"
+            android:label="@string/title_activity_main_base_menu" >
+        </activity>
     </application>
 
 </manifest>

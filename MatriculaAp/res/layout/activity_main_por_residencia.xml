@@ -24,7 +24,7 @@
       
 
         <Button
-            android:id="@+id/btnEsdisticas"
+            android:id="@+id/btnEsdisResidencia"
       		style="@style/btnEstadisticas"
             android:layout_above="@+id/textView11"
             android:onClick="ingresar"

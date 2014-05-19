@@ -12,11 +12,6 @@ public class MainPorFacultadesEstadis extends MainBaseMenu {
 		setContentView(R.layout.activity_main_por_facultades_estadis);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main_por_facultades_estadis, menu);
-		return true;
-	}
+
 
 }

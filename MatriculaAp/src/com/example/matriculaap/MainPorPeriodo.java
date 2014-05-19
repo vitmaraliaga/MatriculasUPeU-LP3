@@ -12,11 +12,5 @@ public class MainPorPeriodo extends MainBaseMenu {
 		setContentView(R.layout.activity_main_por_periodo);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main_por_periodo, menu);
-		return true;
-	}
 
 }

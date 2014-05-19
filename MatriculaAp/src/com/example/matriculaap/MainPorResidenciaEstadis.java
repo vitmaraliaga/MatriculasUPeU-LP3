@@ -13,11 +13,6 @@ public class MainPorResidenciaEstadis extends MainBaseMenu {
 		setContentView(R.layout.activity_main_por_residencia_estadis);
 	}
  
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main_por_residencia_estadis, menu);
-		return true;
-	}
+
 
 }

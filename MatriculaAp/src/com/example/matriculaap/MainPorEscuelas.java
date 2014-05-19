@@ -14,11 +14,6 @@ public class MainPorEscuelas extends MainBaseMenu {
 		//Button btnEnviar= (Button) findViewById(R.id.)
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main_por_escuelas, menu);
-		return true;
-	}
+
 
 }

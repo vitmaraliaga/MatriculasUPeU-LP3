@@ -12,17 +12,18 @@
     <string name="title_activity_main_por_facultades_estadis">MainPorFacultadesEstadis</string>
     <string name="title_activity_main_por_escuelas">MainPorEscuelas</string>
     <string name="title_activity_main_por_escuelas_estadis">MainPorEscuelasEstadis</string>
-    <string name="menu1">Inicio</string>
-    <string name="menu2">Por Facultades</string>
-    <string name="menu3">Por Escuelas</string>
-    <string name="menu5">Por Periodo</string>
-    <string name="menu4">Por Tipo de Residencia</string>
+    <string name="menuInicio">Inicio</string>
+    <string name="menufavorito">Favorito</string>
+    <string name="menuFacultades">Por Facultades</string>
+    <string name="menuCompartir">Compartir</string>
+    <string name="menuEscuelas">Por Escuelas</string>
+    <string name="menuPeriodo">Por Periodo</string>
+    <string name="menuResidencia">Por Tipo de Residencia</string>
+    <string name="menuSalir">Salir</string>
     <string name="comentario">El ingeso de alumnos a variado segun las escuelas y segun el tiempo que va trancurriendo</string>
     <string name="lblEnfermeria">Enfermeria</string>
     <string name="btnEstadisticas">Estaditicas</string>
     <string name="lblResidencia">Residencia</string>
-    <string name="lblMatriculados">Matriculados</string>
-    <string name="lblEn_proceso">En Proceso</string>
     <string name="lblexterno">Externo</string>
     <string name="lblinterno">Interno</string>
     <string name="cantidad11">100</string>
@@ -64,7 +65,17 @@
     <string name="cantidad91">569</string>
     <string name="cantidad92">1001</string>
     <string name="cantidad93">2002</string>
-    <string name="menu6">Salir</string>
     <string name="title_activity_main_base_menu">MainBaseMenu</string>
+    <string name="lblFacultad">Facultad</string>
+    <string name="lblFacihed">FACIHED</string>
+    <string name="lblSiempre">SIEMPRE</string>
+    <string name="lblSalud">SALUD</string>
+    <string name="lblFia">FIA</string>
+    <string name="lblTotalMatriculados">Total Matriculados</string>
+    <string name="lblMatriculadosPorPrimeraVez">Matriculados por Primera Vez</string>
+    <string name="lblMatriculadosPresencialmente">Matriculados Presencialmente</string>
+    <string name="lblMatriculadosVirtualmente">Matriculados Virtualmente</string>
+    <string name="lblMatriculados">Matriculados</string>
+    <string name="lblEn_proceso">En Proceso</string>
 
 </resources>

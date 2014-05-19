@@ -1,26 +1,39 @@
 package com.example.matriculaap;
 
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainBaseMenu extends Activity {
 
 
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		//setContentView(R.layout.activity_main);
+//		
+//		Typeface miFuente= Typeface.createFromAsset(getAssets(),"fonts/acmesab.TTF");
+//		TextView txt= (TextView) findViewById(R.id.tituloMain);
+//		txt.setTypeface(miFuente);
+	}	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main_base_menu, menu);
+		getMenuInflater().inflate(R.menu.main_base_menu, menu);				
+		
 		return true;
+		
 	}
 	
 	public boolean onOptionsItemSelected(MenuItem item) {
 		  Intent action;
 		   switch (item.getItemId()) {
 		
-		case R.id.inicio:
+		case R.id.menuInicio:
 			action = new Intent(getApplicationContext(),
 					MainActivity.class);
 			startActivity(action);
@@ -28,7 +41,7 @@ public class MainBaseMenu extends Activity {
 //					, "pantalla inicio"
 //					, Toast.LENGTH_SHORT).show();
 			return true;
-		case R.id.por_facultades:
+		case R.id.menuFacultades:
 			action = new Intent(getApplicationContext(),
 					MainPorFacultades.class);
 			startActivity(action);
@@ -36,8 +49,7 @@ public class MainBaseMenu extends Activity {
 //					, "pantalla por facultades"
 //					, Toast.LENGTH_SHORT).show();
 			return true;
-		case R.id.por_escuelas:
-			
+		case R.id.menuEscuelas:			
 			action = new Intent(getApplicationContext(),
 					MainPorEscuelas.class);
 			startActivity(action);
@@ -45,21 +57,20 @@ public class MainBaseMenu extends Activity {
 //					, "pantalla por escuelas"
 //					, Toast.LENGTH_SHORT).show();
 			return true;
-		case R.id.por_tipo_de_residencia:
+		case R.id.menuResidencia:
 			action = new Intent(getApplicationContext(),
 					MainPorResidencia.class);
-			startActivity(action);
-		
+			startActivity(action);	
 //			Toast.makeText(getApplicationContext()
 //					, "pantalla por residencia"
 //					, Toast.LENGTH_SHORT).show();
 			return true;
-		case R.id.por_periodo:
+		case R.id.menuPeriodo:
 			action = new Intent(getApplicationContext(),
 					MainPorPeriodo.class);
 			startActivity(action);
 			return true;
-		case R.id.salir:
+		case R.id.menuSalir:
 			finish();
 			return true;
 		

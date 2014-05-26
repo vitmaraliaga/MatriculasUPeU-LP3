@@ -14,15 +14,15 @@ public class MainPorResidencia extends MainBaseMenu  {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_por_residencia);
-		Button btnEstadisticas= (Button) findViewById(R.id.btnEsdisResidencia);
+		Button btnResidEstadis= (Button) findViewById(R.id.btnResidEstadis);
 		
-		btnEstadisticas.setOnClickListener(new OnClickListener() {
+		btnResidEstadis.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {	
-				Intent action= new Intent(
+				Intent i= new Intent(
 						getApplicationContext(),MainPorResidenciaEstadis.class);
-				startActivity(action);
+				startActivity(i);
 				// TODO Auto-generated method stub
 				
 			}

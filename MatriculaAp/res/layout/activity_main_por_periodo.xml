@@ -17,18 +17,11 @@
             style="@style/cuadroDeTexto"
             android:layout_width="265dp"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/seekBar1"
             android:text="@string/comentario"
             android:textSize="5pt" />
 
-        <SeekBar
-            android:id="@+id/seekBar1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true" />
-
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/btnPeriodoEstadis"
             style="@style/btnEstadisticas"
             android:layout_above="@+id/textView1"
             android:text="@string/btnEstadisticas" />

@@ -11,7 +11,8 @@ public class MainPorEscuelas extends MainBaseMenu {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_por_escuelas);
-		//Button btnEnviar= (Button) findViewById(R.id.)
+		
+		//Button btnEscueEstadis = new (Button) findViewById(R.id.)
 	}
 
 

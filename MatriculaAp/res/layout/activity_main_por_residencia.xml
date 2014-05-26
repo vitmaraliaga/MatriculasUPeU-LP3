@@ -8,35 +8,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainPorResidencia" >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-
-        <TextView
-            android:id="@+id/textView11"
-            style="@style/cuadroDeTexto"
-            android:layout_width="265dp"
-            android:layout_alignParentBottom="true"
-            android:layout_height="wrap_content"
-            android:text="@string/comentario"
-            android:textSize="5pt" />
-
-      
-
-        <Button
-            android:id="@+id/btnEsdisResidencia"
-      		style="@style/btnEstadisticas"
-            android:layout_above="@+id/textView11"
-            android:onClick="ingresar"
-            android:text="@string/btnEstadisticas" />
-    </RelativeLayout>
-
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:layout_above="@+id/btnResidEstadis" >
 
         <TableLayout
             android:layout_width="match_parent"
@@ -151,7 +129,23 @@
             android:layout_height="2dp"
             android:layout_marginBottom="10dp"
             android:background="#4169E1" />
-        </TableLayout>
+    </TableLayout>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnResidEstadis"
+        style="@style/btnEstadisticas"
+        android:onClick="ingresar"
+        android:layout_above ="@+id/textView11" 
+        android:text="@string/btnEstadisticas" />
+
+    <TextView
+        android:id="@+id/textView11"
+        style="@style/cuadroDeTexto"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:text="@string/comentario"
+        android:layout_alignParentBottom="true"
+        android:textSize="5pt" />
 
 </RelativeLayout>

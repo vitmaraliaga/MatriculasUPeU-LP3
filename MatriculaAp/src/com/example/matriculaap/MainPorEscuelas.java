@@ -1,9 +1,6 @@
 package com.example.matriculaap;
 
 import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
-import android.widget.Button;
 
 public class MainPorEscuelas extends MainBaseMenu {
 

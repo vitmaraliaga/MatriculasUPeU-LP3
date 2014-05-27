@@ -27,10 +27,6 @@
             android:label="@string/title_activity_main_por_residencia" >
         </activity>
         <activity
-            android:name="com.example.matriculaap.MainPorPeriodo"
-            android:label="@string/title_activity_main_por_periodo" >
-        </activity>
-        <activity
             android:name="com.example.matriculaap.MainPorPeriodoEstadis"
             android:label="@string/title_activity_main_por_periodo_estadis" >
         </activity>
@@ -57,6 +53,10 @@
         <activity
             android:name="com.example.matriculaap.MainBaseMenu"
             android:label="@string/title_activity_main_base_menu" >
+        </activity>
+        <activity
+            android:name="com.example.matriculaap.MainEnProceso"
+            android:label="@string/title_activity_main_en_proceso" >
         </activity>
     </application>
 

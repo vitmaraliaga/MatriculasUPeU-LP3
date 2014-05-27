@@ -4,10 +4,10 @@ package com.example.matriculaap;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Typeface;
+
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+
 
 public class MainBaseMenu extends Activity {
 
@@ -65,9 +65,9 @@ public class MainBaseMenu extends Activity {
 //					, "pantalla por residencia"
 //					, Toast.LENGTH_SHORT).show();
 			return true;
-		case R.id.menuPeriodo:
+		case R.id.menuProceso:
 			action = new Intent(getApplicationContext(),
-					MainPorPeriodo.class);
+					MainEnProceso.class);
 			startActivity(action);
 			return true;
 		case R.id.menuSalir:

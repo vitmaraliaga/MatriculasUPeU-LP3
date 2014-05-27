@@ -17,7 +17,7 @@
     <string name="menuFacultades">Por Facultades</string>
     <string name="menuCompartir">Compartir</string>
     <string name="menuEscuelas">Por Escuelas</string>
-    <string name="menuPeriodo">Por Periodo</string>
+    <string name="menuProceso">En Proceso</string>
     <string name="menuResidencia">Por Tipo de Residencia</string>
     <string name="menuSalir">Salir</string>
     <string name="comentario">El ingeso de alumnos a variado segun las escuelas y segun el tiempo que va trancurriendo</string>
@@ -67,15 +67,24 @@
     <string name="cantidad93">2002</string>
     <string name="title_activity_main_base_menu">MainBaseMenu</string>
     <string name="lblFacultad">Facultad</string>
-    <string name="lblFacihed">FACIHED</string>
-    <string name="lblSiempre">SIEMPRE</string>
-    <string name="lblSalud">SALUD</string>
-    <string name="lblFia">FIA</string>
+    <string name="lblFacihed">Ciencias Humanas y Educacion</string>
+    <string name="lblSiempre">Ciencias Empresariales</string>
+    <string name="lblSalud">Ciencias de la Salud</string>
+    <string name="lblFia">Ingeniaria y Arquitectura</string>
     <string name="lblTotalMatriculados">Total Matriculados</string>
     <string name="lblMatriculadosPorPrimeraVez">Matriculados por Primera Vez</string>
     <string name="lblMatriculadosPresencialmente">Matriculados Presencialmente</string>
     <string name="lblMatriculadosVirtualmente">Matriculados Virtualmente</string>
     <string name="lblMatriculados">Matriculados</string>
     <string name="lblEn_proceso">En Proceso</string>
+    <string name="lblPorcentaje">Porcentaje %</string>
+    <string name="title_activity_main_en_proceso">MainEnProceso</string>
+    <string name="lblGeneral">General</string>
+    <string name="lblPrecencial">Precencial</string>
+    <string name="lblVirtual">Virtual</string>
+    <string name="lblMedio">MEDIO</string>
+    <string name="lblConfirmados">Confirmados</string>
+    <string name="lblSin_confirmar">Sin Confirmar</string>
+    <string name="lblTotal">TOTAL</string>
 
 </resources>

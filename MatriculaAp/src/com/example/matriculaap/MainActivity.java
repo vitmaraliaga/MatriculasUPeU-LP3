@@ -3,11 +3,7 @@ package com.example.matriculaap;
 
 
 import android.os.Bundle;
-import android.app.Activity;
-import android.content.Intent;
 import android.graphics.Typeface;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.TextView;
 
 //Jhon Ccaypani Vasquez !!

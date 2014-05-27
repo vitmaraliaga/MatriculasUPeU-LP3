@@ -54,7 +54,7 @@
                      android:id="@+id/textView3"
                      style="@style/cuadroDeTexto"
                      android:layout_weight="1"
-                     android:text="@string/lblEn_proceso"
+                     android:text="@string/lblPorcentaje"
                      android:textAppearance="?android:attr/textAppearanceMedium" />
              </TableRow>
 

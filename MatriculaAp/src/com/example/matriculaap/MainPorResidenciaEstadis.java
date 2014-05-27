@@ -1,8 +1,8 @@
 package com.example.matriculaap;
 
-import android.app.Activity;
+
 import android.os.Bundle;
-import android.view.Menu;
+
 
 
 public class MainPorResidenciaEstadis extends MainBaseMenu {

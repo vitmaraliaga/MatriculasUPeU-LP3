@@ -31,8 +31,8 @@
         android:id="@+id/menuResidencia"             
         />
     <item 
-        android:title="@string/menuPeriodo"
-        android:id="@+id/menuPeriodo"             
+        android:title="@string/menuProceso"
+        android:id="@+id/menuProceso"             
         />
 	<item 
         android:title="@string/menuSalir"

@@ -2,6 +2,7 @@ package com.example.matriculaap;
 
 
 
+
 import android.os.Bundle;
 import android.graphics.Typeface;
 import android.widget.TextView;
@@ -18,9 +19,7 @@ public class MainActivity extends MainBaseMenu {
 		Typeface miFuente= Typeface.createFromAsset(getAssets(),"fonts/acmesab.TTF");
 		TextView txt= (TextView) findViewById(R.id.tituloMain);
 		txt.setTypeface(miFuente);
-	
 		
-	
 	}	
 
 }

@@ -8,9 +8,54 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainPorEscuelas" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+         >
+        
+        <TableLayout
+        android:id="@+id/Layout_Titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"    
+        android:layout_marginBottom="10dp" >
 
+            
+ 
+        <TextView
+            android:id="@+id/textView1"
+            android:gravity="center_horizontal"
+            android:text="@string/menuEscuelas"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lvEscuelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                
+                >
+            </ListView>
+
+        </LinearLayout>
+      
+    </LinearLayout>
+    
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/cuadroDeTexto"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/comentario"
+            android:textSize="5pt" />
 </RelativeLayout>

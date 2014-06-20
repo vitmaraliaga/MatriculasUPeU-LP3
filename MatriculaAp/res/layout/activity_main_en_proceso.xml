@@ -27,140 +27,32 @@
             android:gravity="center_horizontal"
             android:text="@string/lblEn_proceso"
             android:textAppearance="?android:attr/textAppearanceMedium" />
+
     </TableLayout>
-      <TableLayout
-        android:id="@+id/Layout_Datos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"    
-        android:layout_marginBottom="10dp" >
-        <TableRow android:id="@+id/tableRow2" >
 
-            <TextView
-                android:id="@+id/textView1"
-                style="@style/cuadroDeTexto"
-                android:layout_weight="1"
-                android:text="@string/lblMedio"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/textView2"
-                style="@style/cuadroDeTexto"
-                android:layout_weight="1"
-                android:text="@string/lblConfirmados"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <ListView
+                android:id="@+id/lvProcesos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
 
-            <TextView
-                android:id="@+id/textView3"
-                style="@style/cuadroDeTexto"
-                android:layout_weight="1"
-                android:text="@string/lblSin_confirmar"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:id="@+id/textView4"
-                style="@style/cuadroDeTexto"
-                android:layout_weight="1"
-                android:text="@string/lblTotal"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-        </TableRow>
-
-        <View
-            android:id="@+id/view1"
-            android:layout_width="wrap_content"
-            android:layout_height="2dp"
-            android:layout_marginBottom="10dp"
-            android:background="#4169E1" />
-
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView5"
-                style="@style/cuadroDeTexto"
-                android:layout_weight="1"
-                android:text="@string/lblPrecencial"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:id="@+id/textView6"
-                style="@style/cuadroDeTexto.fondoPlomo"
-                android:layout_weight="1"
-                android:text="@string/cantidad11"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:id="@+id/textView7"
-                style="@style/cuadroDeTexto.fondoPlomo"
-                android:layout_weight="1"
-                android:text="@string/cantidad12"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:id="@+id/textView8"
-                style="@style/cuadroDeTexto.fondoPlomo"
-                android:layout_weight="1"
-                android:text="@string/cantidad12"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-        </TableRow>
-
-        <View
-            android:id="@+id/view2"
-            android:layout_width="wrap_content"
-            android:layout_height="2dp"
-            android:layout_marginBottom="10dp"
-            android:background="#4169E1" />
-
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textView9"
-                style="@style/cuadroDeTexto"
-                android:layout_weight="1"
-                android:text="@string/lblVirtual"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:id="@+id/textView10"
-                style="@style/cuadroDeTexto.fondoPlomo"
-                android:layout_weight="1"
-                android:text="@string/cantidad21"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:id="@+id/textView11"
-                style="@style/cuadroDeTexto.fondoPlomo"
-                android:layout_weight="1"
-                android:text="@string/cantidad22"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-
-            <TextView
-                android:id="@+id/textView12"
-                style="@style/cuadroDeTexto.fondoPlomo"
-                android:layout_weight="1"
-                android:text="@string/cantidad12"
-                android:textAppearance="?android:attr/textAppearanceMedium" />
-        </TableRow>
-
-        <View
-            android:id="@+id/view3"
-            android:layout_width="wrap_content"
-            android:layout_height="2dp"
-            android:layout_marginBottom="10dp"
-            android:background="#4169E1" />
-    </TableLayout>
+        </LinearLayout>
+      
     </LinearLayout>
-     <TextView
-        android:id="@+id/textView14"
-        style="@style/cuadroDeTexto"
-        android:layout_width="265dp"
-        android:layout_height="wrap_content"
-        android:text="@string/comentario"
-        android:layout_alignParentBottom="true"
-        android:textSize="5pt" />
+
+        <TextView
+            android:id="@+id/textView14"
+            style="@style/cuadroDeTexto"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/comentario"
+            android:textSize="5pt" />
 
 </RelativeLayout>

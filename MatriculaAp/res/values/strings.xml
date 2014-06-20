@@ -26,45 +26,22 @@
     <string name="lblResidencia">Residencia</string>
     <string name="lblexterno">Externo</string>
     <string name="lblinterno">Interno</string>
-    <string name="cantidad11">100</string>
-    <string name="cantidad12">41</string>
-    <string name="cantidad13">123</string>
-    <string name="cantidad21">356</string>
-    <string name="cantidad22">25</string>
-    <string name="cantidad23">200</string>
-    <string name="cantidad31">100</string>
-    <string name="cantidad32">41</string>
-    <string name="cantidad33">233</string>
-    <string name="cantidad41">222</string>
+
     <string name="escuela">ESCUELA</string>
-    <string name="periodo1">2013-I</string>
-    <string name="periodo2">2013-II</string>
-    <string name="periodo3">2014-I</string>
+
     <string name="lblIng_sistemas">Ing. Sistemas</string>
     <string name="lblIng_ambiental">Ing. Ambiental</string>
     <string name="lblIng_alimentos">Ing. Alimentos</string>
     <string name="lblIng_civil">Ing. Civil</string>
-    <string name="cantidad42">11</string>
-    <string name="cantidad43">55</string>
+
     <string name="lblEd_inicial">Ed. Inicial</string>
-    <string name="cantidad51">111</string>
-    <string name="cantidad52">220</string>
-    <string name="cantidad53">207</string>
+
     <string name="lblContabilidiad">contabilidiad</string>
-    <string name="cantidad61">896</string>
-    <string name="cantidad62">756</string>
-    <string name="cantidad63">569</string>
+
     <string name="lblAdministracion">Administracion</string>
-    <string name="cantidad71">563</string>
-    <string name="cantidad72">456</string>
-    <string name="cantidad73">554</string>
+
     <string name="lblAg">AG</string>
-    <string name="cantidad81">256</string>
-    <string name="cantidad82">978</string>
-    <string name="cantidad83">659</string>
-    <string name="cantidad91">569</string>
-    <string name="cantidad92">1001</string>
-    <string name="cantidad93">2002</string>
+
     <string name="title_activity_main_base_menu">MainBaseMenu</string>
     <string name="lblFacultad">Facultad</string>
     <string name="lblFacihed">Ciencias Humanas y Educacion</string>
@@ -82,9 +59,11 @@
     <string name="lblGeneral">General</string>
     <string name="lblPrecencial">Precencial</string>
     <string name="lblVirtual">Virtual</string>
-    <string name="lblMedio">MEDIO</string>
+    <string name="lblCantidad">Cantidad</string>
     <string name="lblConfirmados">Confirmados</string>
     <string name="lblSin_confirmar">Sin Confirmar</string>
     <string name="lblTotal">TOTAL</string>
+    <string name="label_tweet_search_loader">cargando</string>
+    <string name="label_tweets_not_found">no hay datos</string>
 
 </resources>

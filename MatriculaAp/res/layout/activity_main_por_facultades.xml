@@ -1,6 +1,5 @@
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -9,217 +8,76 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainPorFacultades" >
 
+    <LinearLayout
+        android:id="@+id/layout_campos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btnFaculEstadis"
+        android:orientation="vertical" >
 
-     <LinearLayout
-         android:id="@+id/layout_campos"
-         android:layout_width="fill_parent"
-         android:layout_height="fill_parent"
-         android:layout_above="@+id/btnFaculEstadis"
-         android:orientation="vertical" >
-
-         <TableLayout
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_marginBottom="10dp" >
-
-             <TextView
-                 android:id="@+id/textView17"
-                 android:gravity="center_horizontal"
-                 android:text="@string/menuFacultades"
-                 android:textAppearance="?android:attr/textAppearanceMedium" />
-         </TableLayout>
-
-         <TableLayout
-             android:layout_width="match_parent"
-             android:layout_height="match_parent" 
-			 >
-                
-             <TableRow android:id="@+id/tableRow1" >
-
-                 <TextView
-                     android:id="@+id/textView1"
-                     style="@style/cuadroDeTexto"
-                     android:layout_weight="1"
-                     android:text="@string/lblFacultad"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                 <TextView
-                     android:id="@+id/textView2"
-                     style="@style/cuadroDeTexto"
-                     android:layout_weight="1"
-                     android:text="@string/lblMatriculados"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                 <TextView
-                     android:id="@+id/textView3"
-                     style="@style/cuadroDeTexto"
-                     android:layout_weight="1"
-                     android:text="@string/lblPorcentaje"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-             </TableRow>
-
-             <View
-                 android:id="@+id/view1"
-                 android:layout_width="wrap_content"
-                 android:layout_height="2dp"
-                 android:layout_marginBottom="10dp"
-                 android:background="#4169E1" />
-
-             <TableRow
-                 android:id="@+id/tableRow2"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content" >
-
-                 <TextView
-                     android:id="@+id/textView4"
-                     style="@style/cuadroDeTexto"
-                     android:layout_weight="1"
-                     android:text="@string/lblFia"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                 <TextView
-                     android:id="@+id/textView5"
-                     style="@style/cuadroDeTexto.fondoPlomo"
-                     android:layout_weight="1"
-                     android:text="@string/cantidad11"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                 <TextView
-                     android:id="@+id/textView6"
-                     style="@style/cuadroDeTexto.fondoPlomo"
-                     android:layout_weight="1"
-                     android:text="@string/cantidad12"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-             </TableRow>
-
-             <View
-                 android:id="@+id/view2"
-                 android:layout_width="wrap_content"
-                 android:layout_height="2dp"
-                 android:layout_marginBottom="10dp"
-                 android:background="#4169E1" />
-
-             <TableRow
-                 android:id="@+id/tableRow3"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content" >
-
-                 <TextView
-                     android:id="@+id/textView7"
-                     style="@style/cuadroDeTexto"
-                     android:layout_weight="1"
-                     android:text="@string/lblSalud"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                 <TextView
-                     android:id="@+id/textView8"
-                     style="@style/cuadroDeTexto.fondoPlomo"
-                     android:layout_weight="1"
-                     android:text="@string/cantidad21"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                 <TextView
-                     android:id="@+id/textView9"
-                     style="@style/cuadroDeTexto.fondoPlomo"
-                     android:layout_weight="1"
-                     android:text="@string/cantidad22"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-             </TableRow>
-
-             <View
-                 android:id="@+id/view3"
-                 android:layout_width="wrap_content"
-                 android:layout_height="2dp"
-                 android:layout_marginBottom="10dp"
-                 android:background="#4169E1" />
-
-             <TableRow
-                 android:id="@+id/tableRow4"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content" >
-
-                 <TextView
-                     android:id="@+id/textView10"
-                     style="@style/cuadroDeTexto"
-                     android:layout_weight="1"
-                     android:text="@string/lblSiempre"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                 <TextView
-                     android:id="@+id/textView11"
-                     style="@style/cuadroDeTexto.fondoPlomo"
-                     android:layout_weight="1"
-                     android:text="@string/cantidad21"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                 <TextView
-                     android:id="@+id/textView12"
-                     style="@style/cuadroDeTexto.fondoPlomo"
-                     android:layout_weight="1"
-                     android:text="@string/cantidad22"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-             </TableRow>
-
-             <View
-                 android:id="@+id/view4"
-                 android:layout_width="wrap_content"
-                 android:layout_height="2dp"
-                 android:layout_marginBottom="10dp"
-                 android:background="#4169E1" />
-
-             <TableRow
-                 android:id="@+id/tableRow5"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content" >
-
-                 <TextView
-                     android:id="@+id/textView13"
-                     style="@style/cuadroDeTexto"
-                     android:layout_weight="1"
-                     android:text="@string/lblFacihed"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                 <TextView
-                     android:id="@+id/textView14"
-                     style="@style/cuadroDeTexto.fondoPlomo"
-                     android:layout_weight="1"
-                     android:text="@string/cantidad21"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                 <TextView
-                     android:id="@+id/textView15"
-                     style="@style/cuadroDeTexto.fondoPlomo"
-                     android:layout_weight="1"
-                     android:text="@string/cantidad22"
-                     android:textAppearance="?android:attr/textAppearanceMedium" />
-             </TableRow>
-
-             <View
-                 android:id="@+id/view5"
-                 android:layout_width="wrap_content"
-                 android:layout_height="2dp"
-                 android:layout_marginBottom="10dp"
-                 android:background="#4169E1" />
-         </TableLayout>
-     </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView16"
-            style="@style/cuadroDeTexto"
-            android:layout_width="265dp"
-            android:layout_alignParentBottom="true"
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/comentario"
-            android:textSize="5pt" />
+            android:layout_marginBottom="10dp" >
 
-      
+            <TextView
+                android:id="@+id/textView17"
+                android:gravity="center_horizontal"
+                android:text="@string/menuFacultades"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableLayout>
 
-        <Button
-            android:id="@+id/btnFaculEstadis"
-      		style="@style/btnEstadisticas"
-            android:layout_above="@+id/textView16"
-            android:onClick="ingresar"
-            android:text="@string/btnEstadisticas" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
-    
+            <TableRow android:id="@+id/tableRow1" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/cuadroDeTexto"
+                    android:layout_weight="1"
+                    android:text="@string/lblFacultad"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/cuadroDeTexto"
+                    android:layout_weight="1"
+                    android:text="@string/lblMatriculados"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/cuadroDeTexto"
+                    android:layout_weight="1"
+                    android:text="@string/lblPorcentaje"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <ListView
+                android:id="@+id/lvFacultades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView16"
+        style="@style/cuadroDeTexto"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/comentario"
+        android:textSize="5pt" />
+
+    <Button
+        android:id="@+id/btnFaculEstadis"
+        style="@style/btnEstadisticas"
+        android:layout_above="@+id/textView16"
+        android:onClick="ingresar"
+        android:text="@string/btnEstadisticas" />
+
 </RelativeLayout>

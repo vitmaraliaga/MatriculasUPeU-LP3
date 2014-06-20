@@ -59,13 +59,6 @@
                     android:layout_weight="1"
                     android:text="@string/lblMatriculadosVirtualmente"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    style="@style/cuadroDeTexto.fondoPlomo"
-                    android:layout_weight="1"
-                    android:text="@string/cantidad11"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
             </TableRow>
 
             <View
@@ -86,13 +79,6 @@
                     android:layout_weight="1"
                     android:text="@string/lblMatriculadosPresencialmente"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView5"
-                    style="@style/cuadroDeTexto.fondoPlomo"
-                    android:layout_weight="1"
-                    android:text="@string/cantidad21"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
             </TableRow>
 
             <View
@@ -112,13 +98,6 @@
                     android:layout_weight="1"
                     android:text="@string/lblMatriculadosPorPrimeraVez"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView7"
-                    style="@style/cuadroDeTexto.fondoPlomo"
-                    android:layout_weight="1"
-                    android:text="@string/cantidad21"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
             </TableRow>
 
             <View
@@ -137,13 +116,6 @@
                     style="@style/cuadroDeTexto"
                     android:layout_weight="1"
                     android:text="@string/lblTotalMatriculados"
-                    android:textAppearance="?android:attr/textAppearanceMedium" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    style="@style/cuadroDeTexto.fondoPlomo"
-                    android:layout_weight="1"
-                    android:text="@string/cantidad21"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
             </TableRow>
 

@@ -2,8 +2,7 @@ package com.example.list;
 
 import java.util.ArrayList;
 
-import com.example.model.Proceso;
-
+import com.example.model.Model;
 
 import com.example.matriculaap.R;
 import android.content.Context;
@@ -13,18 +12,18 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-public class ProcesoAdapter extends ArrayAdapter<Proceso>{
+public class ListAdapter extends ArrayAdapter<Model>{
 	
 	private Context context;
-	private ArrayList<Proceso> procesos;
+	private ArrayList<Model> listas;
 	
 
-	public ProcesoAdapter(Context context, int viewResourceId, 
-			ArrayList<Proceso> procesos) {
-		super(context, viewResourceId, procesos);
+	public ListAdapter(Context context, int viewResourceId, 
+			ArrayList<Model> listas) {
+		super(context, viewResourceId, listas);
 		
 		this.context= context;
-		this.procesos= procesos;
+		this.listas= listas;
 		// TODO Auto-generated constructor stub
 	}
 	static class ViewHolder{
@@ -39,7 +38,7 @@ public View getView(int position, View convertView, ViewGroup parent) {
 	if (convertView == null) {
 
 		convertView = LayoutInflater.from(context).inflate(R
-				.layout.row_proceso, parent, false);
+				.layout.row_list, parent, false);
 		ViewHolder ViewHolder = new ViewHolder();
 		ViewHolder.nombre= (TextView) convertView.findViewById(R.id.txtNombre);
 		ViewHolder.cantidad= (TextView) convertView.findViewById(R.id.txtCantidad);
@@ -47,9 +46,9 @@ public View getView(int position, View convertView, ViewGroup parent) {
 		convertView.setTag(ViewHolder);	
 	}
 	ViewHolder Holder =(ViewHolder) convertView.getTag();
-	 Holder.nombre.setText(procesos.get(position).getNombre());
-	 Holder.cantidad.setText(procesos.get(position).getCantidad());
-	 Holder.porcentaje.setText(procesos.get(position).getPorcentaje());
+	 Holder.nombre.setText(listas.get(position).getNombre());
+	 Holder.cantidad.setText(listas.get(position).getCantidad());
+	 Holder.porcentaje.setText(listas.get(position).getPorcentaje());
 	 
 	
 	return convertView;

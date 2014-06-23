@@ -2,12 +2,11 @@ package com.example.matriculaap;
 
 import java.util.ArrayList;
 
-import com.example.list.FacultadAdapter;
-import com.example.model.Facultad;
 
+import com.example.list.ListAdapter;
+import com.example.model.Model;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.view.View;
@@ -41,13 +40,13 @@ public class MainPorFacultades extends MainBaseMenu  {
 			}
 		});	
 	}
-public void updateListView(ArrayList<Facultad> facultades){
+public void updateListView(ArrayList<Model> facultades){
 	lvFacultades
-	.setAdapter(new FacultadAdapter(this, R.layout.row_facultad, facultades));
+	.setAdapter(new ListAdapter(this, R.layout.row_list, facultades));
 	
 }
 	
-class facultadSearch extends AsyncTask<Object, Void, ArrayList<Facultad>> {
+class facultadSearch extends AsyncTask<Object, Void, ArrayList<Model>> {
 
 	ProgressDialog dialog;
 	@Override
@@ -60,12 +59,12 @@ class facultadSearch extends AsyncTask<Object, Void, ArrayList<Facultad>> {
 	}
 	
 	@Override
-	protected ArrayList<Facultad> doInBackground(Object... params) {
-		ArrayList<Facultad> facultades= new ArrayList<Facultad>();
+	protected ArrayList<Model> doInBackground(Object... params) {
+		ArrayList<Model> facultades= new ArrayList<Model>();
 		try {
 			for (int i = 0; i < 4; i++) {
-				Facultad facultad= new Facultad();
-				facultad.setNombreFacultad("FACULTAD---"+i);
+				Model facultad= new Model();
+				facultad.setNombre("FACULTAD---"+i);
 				facultad.setCantidad(i+"00");
 				facultad.setPorcentaje(i+"0 %");
 				facultades.add(facultad);
@@ -80,7 +79,7 @@ class facultadSearch extends AsyncTask<Object, Void, ArrayList<Facultad>> {
 		return facultades;
 	}
 	@Override
-	protected void onPostExecute(ArrayList<Facultad> facultades) {
+	protected void onPostExecute(ArrayList<Model> facultades) {
 		// TODO Auto-generated method stub
 		super.onPostExecute(facultades);
 		dialog.dismiss();

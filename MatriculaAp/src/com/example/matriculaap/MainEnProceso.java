@@ -2,8 +2,8 @@ package com.example.matriculaap;
 
 import java.util.ArrayList;
 
-import com.example.list.ProcesoAdapter;
-import com.example.model.Proceso;
+import com.example.list.ListAdapter;
+import com.example.model.Model;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -22,11 +22,11 @@ public class MainEnProceso extends MainBaseMenu {
 		lvProcesos = (ListView) findViewById(R.id.lvProcesos);
 		new procesoSearch().execute();
 	}
-	public void updateListView(ArrayList<Proceso> procesos) {
+	public void updateListView(ArrayList<Model> procesos) {
 		lvProcesos
-				.setAdapter(new ProcesoAdapter(this, R.layout.row_proceso, procesos));
+				.setAdapter(new ListAdapter(this, R.layout.row_list, procesos));
 	}
-	class procesoSearch extends AsyncTask<Object, Void, ArrayList<Proceso>> {
+	class procesoSearch extends AsyncTask<Object, Void, ArrayList<Model>> {
 
 		
 		ProgressDialog dialog;
@@ -43,11 +43,11 @@ public class MainEnProceso extends MainBaseMenu {
 		}
 		
 		@Override
-		protected ArrayList<Proceso> doInBackground(Object... params) {
-			ArrayList<Proceso> procesos= new ArrayList<Proceso>();
+		protected ArrayList<Model> doInBackground(Object... params) {
+			ArrayList<Model> procesos= new ArrayList<Model>();
 			try {
 				for (int i = 0; i < 11; i++) {
-					Proceso proceso= new Proceso();
+					Model proceso= new Model();
 					proceso.setNombre("proceso "+i);
 					proceso.setCantidad("20 "+i);
 					proceso.setPorcentaje("100 %");
@@ -61,7 +61,7 @@ public class MainEnProceso extends MainBaseMenu {
 			return procesos;
 		}
 		@Override
-		protected void onPostExecute(ArrayList<Proceso> procesos) {
+		protected void onPostExecute(ArrayList<Model> procesos) {
 			// TODO Auto-generated method stub
 			super.onPostExecute(procesos);
 			dialog.dismiss();

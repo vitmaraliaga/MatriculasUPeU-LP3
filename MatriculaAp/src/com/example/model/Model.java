@@ -1,10 +1,11 @@
 package com.example.model;
 
-public class Proceso {
-	
-	 private String nombre;
-	 private String cantidad;
-	 private String porcentaje;
+
+
+public class Model {
+	private String nombre;
+	private String cantidad;
+	private String porcentaje;
 	public String getNombre() {
 		return nombre;
 	}
@@ -23,6 +24,7 @@ public class Proceso {
 	public void setPorcentaje(String porcentaje) {
 		this.porcentaje = porcentaje;
 	}
-
+	
+	
 
 }

@@ -22,6 +22,7 @@
 
             <TextView
                 android:id="@+id/textView17"
+                style="@style/cuadroDeTexto"
                 android:gravity="center_horizontal"
                 android:text="@string/menuFacultades"
                 android:textAppearance="?android:attr/textAppearanceMedium" />

@@ -65,5 +65,6 @@
     <string name="lblTotal">TOTAL</string>
     <string name="label_tweet_search_loader">cargando</string>
     <string name="label_tweets_not_found">no hay datos</string>
+    <string name="lblEscuela">Escuela</string>
 
 </resources>

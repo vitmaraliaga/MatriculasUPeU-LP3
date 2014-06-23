@@ -17,28 +17,37 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
         <style name="cuadroDeTexto">
-        
+        <item name="android:shadowColor">#00ccff</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_margin">0.2pt</item>
         <item name="android:typeface">sans</item>
         <item name="android:textSize">6pt</item>
-        
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
     <style name="cuadroDeTexto.fondoAzul">
-       <item name="android:background">#4169E1</item>
+       <item name="android:background">#060E57</item>
        
-    </style>     
+    </style> 
+        
     <style name="cuadroDeTexto.fondoPlomo">
-        <item name="android:background">#696969</item>
+        <item name="android:background">#A4A5AD</item>
        
     </style>
-    <style name="cuadroDeTexto.fondoCeleste">
-        <item name="android:background">#99CCFF</item>
-       
+    
+    <style name="cuadroDeTexto.fondoPlomoClaro">
+        <item name="android:background">#C8C9D2</item>
     </style>
+        
+    <style name="cuadroDeTexto.fondoPlomoClaroMas">
+        <item name="android:background">#E7E8F2</item>
+    </style>  
+     
+   
     <style name="btnEstadisticas">
         <item name="android:textColor">#ffffff</item>
         <item name="android:shadowColor">#00ccff</item>
@@ -51,5 +60,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentRight">true</item>
     </style>
+    
 
 </resources>

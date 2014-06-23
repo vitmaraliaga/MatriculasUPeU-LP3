@@ -2,8 +2,8 @@ package com.example.matriculaap;
 
 import java.util.ArrayList;
 
-import com.example.list.EscuelaAdapter;
-import com.example.model.Escuela;
+import com.example.list.ListAdapter;
+import com.example.model.Model;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -22,12 +22,12 @@ public class MainPorEscuelas extends MainBaseMenu {
 		new escuelaSearch().execute();
 		//Button btnEscueEstadis = new (Button) findViewById(R.id.)
 	}
-	public void updateListView(ArrayList<Escuela> escuelas){
+	public void updateListView(ArrayList<Model> escuelas){
 		lvEscuelas
-		.setAdapter(new EscuelaAdapter(this, R.layout.row_escuela, escuelas));
+		.setAdapter(new ListAdapter(this, R.layout.row_list, escuelas));
 	
 	}
-	class escuelaSearch extends AsyncTask<Object, Void, ArrayList<Escuela>> {
+	class escuelaSearch extends AsyncTask<Object, Void, ArrayList<Model>> {
 
 		ProgressDialog dialog;
 	@Override
@@ -40,13 +40,13 @@ public class MainPorEscuelas extends MainBaseMenu {
 		dialog.show();
 	}
 		@Override
-		protected ArrayList<Escuela> doInBackground(Object... params) {
-			ArrayList<Escuela> escuelas= new ArrayList<Escuela>();
+		protected ArrayList<Model> doInBackground(Object... params) {
+			ArrayList<Model> escuelas= new ArrayList<Model>();
 			
 			try {
 				for (int i = 0; i < 21; i++) {
-					Escuela escuela= new Escuela();
-					escuela.setNombreEscuela("escuela........"+i);
+					Model escuela= new Model();
+					escuela.setNombre("escuela........"+i);
 					escuela.setCantidad("01"+i);
 					escuela.setPorcentaje(i+"0 %");
 					escuelas.add(escuela);
@@ -61,7 +61,7 @@ public class MainPorEscuelas extends MainBaseMenu {
 			return escuelas;
 		}
 		@Override
-		protected void onPostExecute(ArrayList<Escuela> escuelas) {
+		protected void onPostExecute(ArrayList<Model> escuelas) {
 			// TODO Auto-generated method stub
 			super.onPostExecute(escuelas);
 			

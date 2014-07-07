@@ -14,18 +14,19 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
+        
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
         <style name="cuadroDeTexto">
-        <item name="android:shadowColor">#00ccff</item>
+        <item name="android:shadowColor">#031458</item>
         <item name="android:shadowRadius">5</item>
-        <item name="android:shadowDx">1</item>
-        <item name="android:shadowDy">1</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_margin">0.2pt</item>
         <item name="android:typeface">sans</item>
-        <item name="android:textSize">6pt</item>
+        <item name="android:textSize">8pt</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
@@ -35,7 +36,7 @@
     </style> 
         
     <style name="cuadroDeTexto.fondoPlomo">
-        <item name="android:background">#A4A5AD</item>
+        <item name="android:background">#3D3D3D</item>
        
     </style>
     
@@ -50,11 +51,10 @@
    
     <style name="btnEstadisticas">
         <item name="android:textColor">#ffffff</item>
-        <item name="android:shadowColor">#00ccff</item>
+        <item name="android:shadowColor">#031458</item>
         <item name="android:shadowRadius">5</item>
         <item name="android:shadowDx">1</item>
         <item name="android:shadowDy">1</item>
-        
         <item name="android:background">#000033</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

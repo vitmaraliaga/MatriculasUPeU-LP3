@@ -6,16 +6,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/admincion"
     tools:context=".MainEnProceso" >
 
         <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_above="@+id/btnProceEstadis"
-        android:orientation="vertical"
-         >
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical" >
         
         <TableLayout
         android:id="@+id/Layout_Titulo"
@@ -24,7 +23,7 @@
         android:layout_marginBottom="10dp" >
  
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/tituloProceso"
             style="@style/cuadroDeTexto"
             android:gravity="center_horizontal"
             android:text="@string/lblEn_proceso"
@@ -36,13 +35,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
-            <TableRow android:id="@+id/tableRow1" >
+            <TableRow 
+                android:id="@+id/tableRow1"
+                android:background="@drawable/degradado1"
+                 >
 
                 <TextView
                     android:id="@+id/textView1"
                     style="@style/cuadroDeTexto"
                     android:layout_weight="1"
-                    android:text="@string/lblFacultad"
+                    android:text="@string/lblProceso"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <TextView
@@ -59,30 +61,15 @@
                     android:text="@string/lblPorcentaje"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
             </TableRow>
-
+    
             <ListView
                 android:id="@+id/lvProcesos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
             </ListView>
-
+        
+        
         </TableLayout>
     </LinearLayout>
-
-        <TextView
-            android:id="@+id/textView14"
-            style="@style/cuadroDeTexto"
-            android:layout_width="265dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:text="@string/comentario"
-            android:textSize="5pt" />
-         <Button
-        android:id="@+id/btnProceEstadis"
-        style="@style/btnEstadisticas"
-        android:layout_above="@+id/textView14"
-        android:onClick="ingresar"
-        android:text="@string/btnEstadisticas" />
 
 </RelativeLayout>

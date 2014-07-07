@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/upeu1"
     tools:context=".MainActivity" >
 
 <LinearLayout
@@ -13,6 +14,7 @@
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        
         android:orientation="vertical"
          >
         
@@ -24,10 +26,12 @@
 
             
  
+            
         <TextView
             android:id="@+id/tituloMain"
             style="@style/cuadroDeTexto"
             android:gravity="center_horizontal"
+            
             android:text="@string/lblGeneral"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -35,14 +39,39 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
+ <TableRow 
+     android:id="@+id/tableRow1"
+     android:background="@drawable/degradado1">
+     
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/cuadroDeTexto"
+                    android:layout_weight="1"
+                    android:text="@string/lbldato"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/cuadroDeTexto"
+                    android:layout_weight="1"
+                    android:text="@string/lblMatriculados"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
 
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/cuadroDeTexto"
+                    android:layout_weight="1"
+                    android:text="@string/lblPorcentaje"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+			
             <ListView
+                
                 android:id="@+id/lvPrincipal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
             </ListView>
-
+           
         </TableLayout>
 
         </LinearLayout>

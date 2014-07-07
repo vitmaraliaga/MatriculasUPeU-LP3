@@ -4,21 +4,31 @@ import java.util.ArrayList;
 
 import com.example.list.ListAdapter;
 import com.example.model.Model;
+
+import android.app.Activity;
 import android.app.ProgressDialog;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class MainEnProceso extends MainBaseMenu {
 	
 	private ListView lvProcesos;
-
+	public static Activity pro;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		pro= this;
 		setContentView(R.layout.activity_main_en_proceso);
+		
+		Typeface miFuente= Typeface.createFromAsset(getAssets(),"fonts/acmesab.TTF");
+		TextView txt= (TextView) findViewById(R.id.tituloProceso);
+		txt.setTypeface(miFuente);
+		
 		lvProcesos = (ListView) findViewById(R.id.lvProcesos);
 		new procesoSearch().execute();
 	}

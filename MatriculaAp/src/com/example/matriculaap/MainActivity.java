@@ -10,6 +10,7 @@ import com.example.model.Model;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.graphics.Typeface;
 import android.widget.ListView;
@@ -21,14 +22,23 @@ import android.widget.Toast;
 public class MainActivity extends MainBaseMenu {
 
 	private ListView lvPrincipal;
+	//private PullToRefreshLayout pull; 
+	public static Activity ma;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		ma=this;
 		setContentView(R.layout.activity_main);
+		
+		
 		
 		Typeface miFuente= Typeface.createFromAsset(getAssets(),"fonts/acmesab.TTF");
 		TextView txt= (TextView) findViewById(R.id.tituloMain);
 		txt.setTypeface(miFuente);
+	
+		
+		
+		
 		
 		lvPrincipal= (ListView) findViewById(R.id.lvPrincipal);
 		new principalSearch().execute();

@@ -7,38 +7,35 @@ import com.example.list.ListAdapter;
 import com.example.model.Model;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainPorFacultades extends MainBaseMenu  {
 
 	private ListView lvFacultades;
+	public static Activity fa;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		fa=this;
 		setContentView(R.layout.activity_main_por_facultades);
 		
-		lvFacultades=(ListView) findViewById(R.id.lvFacultades);
-		Button btnFaculEstadis = (Button) findViewById(R.id.btnFaculEstadis);
-	   new facultadSearch().execute();
-		btnFaculEstadis.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
+		Typeface miFuente= Typeface.createFromAsset(getAssets(),"fonts/acmesab.TTF");
+		TextView txt= (TextView) findViewById(R.id.tituloFacultades);
+		txt.setTypeface(miFuente);
 		
-			Intent i= new Intent(getApplicationContext(),
-					MainPorFacultadesEstadis.class);	
-			startActivity(i);
-				
-				// TODO Auto-generated method stub
-				
-			}
-		});	
+		lvFacultades=(ListView) findViewById(R.id.lvFacultades);
+		//Button btnFaculEstadis = (Button) findViewById(R.id.btnFaculEstadis);
+	   new facultadSearch().execute();
+	
 	}
 public void updateListView(ArrayList<Model> facultades){
 	lvFacultades

@@ -6,16 +6,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainPorEscuelas" >
+    tools:context=".MainPorEscuelas"
+    android:background="@drawable/sis" >
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_above="@+id/btnEscuEstadis"
-        android:orientation="vertical"
-         >
+        android:orientation="vertical" >
         
         <TableLayout
         android:id="@+id/Layout_Titulo"
@@ -26,7 +25,7 @@
             
  
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/tituloEscuelas"
             style="@style/cuadroDeTexto"
             android:gravity="center_horizontal"
             android:text="@string/menuEscuelas"
@@ -39,7 +38,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
-            <TableRow android:id="@+id/tableRow1" >
+            <TableRow 
+                android:id="@+id/tableRow1"
+                android:background="@drawable/degradado1"
+                 >
 
                 <TextView
                     android:id="@+id/textView2"
@@ -62,30 +64,15 @@
                     android:text="@string/lblPorcentaje"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
             </TableRow>
-
+			
             <ListView
                 android:id="@+id/lvEscuelas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
             </ListView>
-
+            
+           
         </TableLayout>
 
         </LinearLayout>
-    
-       <TextView
-        android:id="@+id/textView16"
-        style="@style/cuadroDeTexto"
-        android:layout_width="265dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="@string/comentario"
-        android:textSize="5pt" />
-
-    <Button
-        android:id="@+id/btnEscuEstadis"
-        style="@style/btnEstadisticas"
-        android:layout_above="@+id/textView16"
-        android:onClick="ingresar"
-        android:text="@string/btnEstadisticas" />
 </RelativeLayout>

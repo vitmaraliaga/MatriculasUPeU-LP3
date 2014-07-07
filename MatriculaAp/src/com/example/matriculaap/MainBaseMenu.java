@@ -11,7 +11,12 @@ import android.view.MenuItem;
 
 public class MainBaseMenu extends Activity {
 
-
+//	private MainActivity m= new MainActivity();
+//	private MainEnProceso p= new MainEnProceso();
+//	private MainPorEscuelas e= new MainPorEscuelas();
+//	private MainPorFacultades f= new MainPorFacultades();
+//	private MainPorResidencia r= new MainPorResidencia();
+	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//setContentView(R.layout.activity_main);
@@ -57,14 +62,6 @@ public class MainBaseMenu extends Activity {
 //					, "pantalla por escuelas"
 //					, Toast.LENGTH_SHORT).show();
 			return true;
-		case R.id.menuResidencia:
-			action = new Intent(getApplicationContext(),
-					MainPorResidencia.class);
-			startActivity(action);	
-//			Toast.makeText(getApplicationContext()
-//					, "pantalla por residencia"
-//					, Toast.LENGTH_SHORT).show();
-			return true;
 		case R.id.menuProceso:
 			action = new Intent(getApplicationContext(),
 					MainEnProceso.class);
@@ -72,6 +69,16 @@ public class MainBaseMenu extends Activity {
 			return true;
 		case R.id.menuSalir:
 			finish();
+//			m.ma.finish();
+//			p.pro.finish();
+//			e.es.finish();
+//			r.re.finish();
+//			f.fa.finish();
+			
+			
+			
+			//Intent salida = new Intent(Intent.ACTION_MAIN);finish(); 
+			
 			return true;
 		
 		default:   

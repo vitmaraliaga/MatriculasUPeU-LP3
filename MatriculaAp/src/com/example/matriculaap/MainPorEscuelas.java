@@ -4,19 +4,29 @@ import java.util.ArrayList;
 
 import com.example.list.ListAdapter;
 import com.example.model.Model;
+
+import android.app.Activity;
 import android.app.ProgressDialog;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainPorEscuelas extends MainBaseMenu {
 
 	private ListView lvEscuelas;
+	public static Activity es;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		es= this;
 		setContentView(R.layout.activity_main_por_escuelas);
+		
+		Typeface miFuente= Typeface.createFromAsset(getAssets(),"fonts/acmesab.TTF");
+		TextView txt= (TextView) findViewById(R.id.tituloEscuelas);
+		txt.setTypeface(miFuente);
 		
 		lvEscuelas = (ListView) findViewById(R.id.lvEscuelas);
 		new escuelaSearch().execute();
